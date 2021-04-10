@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: arial,sans-serif;
+}
+
+svg{
+    width: 20px;
+    height: 20px;
+}
+
+svg:hover, header img:hover{
+    background-color: lightgray;
+    border-radius: 50%;
+}
+
+
+/********************************/
+/**** Header section ************/
+/********************************/
+header{
+    height: 70px;
+    padding: 1rem;
+}
+
+header ul {
+    list-style-type: none;
+    float: right;
+    display: flex;
+    align-items: center;
+}
+
+header ul li{
+    display: inline-block;
+    padding: 8px;
+}
+
+header ul li a{
+    display: block;
+    text-decoration: none;
+    color: rgba(0,0,0,0.87);
+    font-size: 13px;
+}
+
+header ul li a:hover{
+    text-decoration: underline;
+}
+
+header img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+
+/***********************************/
+/***** Google bar section **********/
+/***********************************/
+.google-bar{
+    padding: 5%;
+    text-align: center;
+}
+
+.google-bar img{
+    object-fit: contain;
+    max-height: 100%;
+    max-width: 100%;
+    transform: scale(1.5)
+}
+
+.google-bar input{
+    width: 40%;
+    height: 50px;
+    border-radius: 50px;
+    border: 1px solid lightgray;
+    margin: 3rem auto;
+}
+
+.google-bar input:hover{
+    box-shadow: -3px 3px 10px rgba(0,0,0,0.3) 
+}
+
+.google-bar button{
+    width: 10em;
+    height: 3em;
+    border: none;
+    border-radius: 5px;
+}
+
+.google-bar button:hover{
+    border: 1px solid lightgray;
+}
+
+.google-bar p{
+    margin-top: 1.5em;
+    font-size: 14px;
+}
+
+.google-bar p a{
+    margin-right: 0.5em;
+}
+
+.google-bar a{
+    text-decoration: none;
+}
+
+.google-bar a:hover{
+    text-decoration:underline;
+}
+
+
+/*********************************/
+/**** Footer section *************/
+/*********************************/
+.footer{
+    background-color: #f2f2f2;
+    margin-top: 8em;
+    color: #70757a;
+}
+
+.footer div{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.footer ul{
+    list-style-type: none;
+}
+
+.footer ul li{
+    display: inline-block;
+}
+
+.footer ul li a{
+    text-decoration: none;
+    color: #70757a;
+    font-size: 14px;
+    margin-right: 1em;
+}
+
+.footer ul li a:hover{
+    text-decoration: underline;
+}
+
+
+@media screen and (max-width: 768px){
+    /* Google bar section */
+    .google-bar{
+        padding-top: 20%;
+    }
+
+    .google-bar img{
+        transform: scale(0.5)
+    }
+
+    .google-bar input{
+        width: 80%;
+        height: 30px;
+        border-radius: 50px;
+        border: 1px solid lightgray;
+        margin: 1rem auto;
+    }
+
+    .google-bar button{
+        width: 8.5em;
+        height: 3em;
+        padding: 2px;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .google-bar p{
+        font-size: 10px;
+    }
+
+    /* Footer */
+    .footer{
+        margin-top: 12em;
+        font-size: 13px;
+    }
+
+    .footer div{
+        display: block;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .footer div .Carbon{
+        margin: 1em auto;
+    }
+}
